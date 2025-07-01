@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center_horizontal">
+
+    <!-- Hoşgeldin Metni -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:id="@+id/imageViewProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_icon"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Profil Fotoğrafı"
+        android:layout_gravity="center"/>
+
+    <!-- Kullanıcı Maili -->
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kullanici@mail.com"
+        android:textSize="20sp"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginBottom="36dp" />
+
+    <!-- Şifre Değiştir Butonu -->
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifreyi Değiştir"
+        android:backgroundTint="?android:colorAccent"
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Geri Dön Butonu -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Geri Dön"
+        android:backgroundTint="?android:colorControlNormal"
+        android:textColor="?android:textColorPrimary" />
+</LinearLayout>

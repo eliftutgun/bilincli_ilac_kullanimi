@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayarlar"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Tema Seçimi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tema Seçimi"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karanlık Mod"
+        android:textSize="16sp" />
+
+    <!-- Bildirim Ayarları -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bildirim Ayarları"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bildirimleri Aç"
+        android:textSize="16sp" />
+
+    <!-- Hakkında -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hakkında"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp" />
+
+    <!-- Uygulama İkonu -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Uygulama İkonu" />
+
+    <!-- Geliştirici Bilgisi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geliştirici: Proje Grubu"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Versiyon Bilgisi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sürüm: 1.0.0"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Destek Bilgisi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İletişim: egemenaydin_99@hotmail.com"
+        android:textSize="16sp" />
+
+</LinearLayout>

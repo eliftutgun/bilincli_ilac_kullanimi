@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eczaneler"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Kutu -->
+    <FrameLayout
+        android:id="@+id/mapPlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#DDDDDD"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/mapText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buraya API Key ile Map gelecek"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

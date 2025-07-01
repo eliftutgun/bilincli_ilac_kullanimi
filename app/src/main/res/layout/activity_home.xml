@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:windowBackground">
+
+    <!-- Hoş geldiniz mesajı -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoş geldiniz !"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="27sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- GridLayout içinde her görsel + açıklaması olacak -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <!-- Profil -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/profile_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Profil"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- QR Kod -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewQR"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/qr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="QR Kod"
+                android:textColor="?android:textColorPrimary"
+
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Prospektüs -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewProspektus"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/prospectus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prospektüs"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- İlaçlar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewIlaclar"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/ilaclar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlaçlar"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- İlaçlarım -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewIlaclarim"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/ilaclarim" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlaçlarım"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Eczaneler -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewEczane"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/eczaneler" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eczaneler"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Alarm -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewAlarm"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/alarm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İlaç Hatırlatıcı"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Ayarlar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewAyarlar"
+                android:layout_width="170dp"
+                android:layout_height="110dp"
+                android:clickable="true"
+                android:src="@drawable/ayarlar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayarlar"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

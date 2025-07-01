@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="?android:colorBackground">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Şifre Sıfırlama"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <!-- E-posta input -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-posta"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Yeni şifre input -->
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yeni Şifre"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Şifre sıfırlama butonu -->
+    <Button
+        android:id="@+id/buttonResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Sıfırla"
+        android:backgroundTint="?android:attr/colorPrimary"
+        android:textColor="?android:textColorPrimary"/>
+
+</LinearLayout>

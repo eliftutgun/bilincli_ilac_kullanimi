@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prospectusLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:colorBackground"
+    android:padding="16dp"
+    tools:context=".ProspectusActivity">
+
+    <TextView
+        android:id="@+id/prospectusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İlaç Prospektüsleri"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="30dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:colorControlNormal" />
+
+    <!-- BURAYA EKLİYORUZ -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewProspectus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="İlaç ara..."
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prospectusRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="12dp" />
+
+</LinearLayout>
